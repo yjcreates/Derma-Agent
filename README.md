@@ -6,11 +6,15 @@ QR 코드로 접속해 세로 스크롤로 읽는 원페이지 구조입니다.
 ## 파일 구성
 
 ```
-├── index.html      # 페이지 본문 (HTML + CSS + JS 단일 파일)
-├── assets/         # 로고 · 일러스트 · 앱 화면 이미지
+├── index.html      # QR 랜딩 페이지 (표지: Derma Agent 안내 + ACRYL 제품)
+├── intro.html      # Derma Agent 모바일 소개 페이지 (스크롤 서사)
+├── assets/         # 로고 · 일러스트 · 앱 화면 · 제품 심볼 이미지
 ├── .nojekyll       # GitHub Pages Jekyll 처리 비활성화
 └── README.md
 ```
+
+**동선**: QR → `index.html`(랜딩) → "소개 페이지 보기" 버튼 → `intro.html`.
+랜딩은 노트북·태블릿·모바일 반응형이며, 소개 페이지 헤더의 Derma Agent 로고를 누르면 랜딩으로 돌아옵니다.
 
 `assets/` 파일 이름 규칙
 
@@ -22,6 +26,7 @@ QR 코드로 접속해 세로 스크롤로 읽는 원페이지 구조입니다.
 | `drug-` | 생물학적 제제 제품 이미지 |
 | `app-` | 앱 화면 스크린샷 |
 | `card-` | 증상 요약 카드 |
+| `symbol-` | ACRYL 제품 심볼 (NADIA-ANE · ALLM.H · Jonathan.H) |
 
 ## 배포 방법 (GitHub Pages)
 
