@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Derma Agent 1:1 문의</title>
+<link rel="icon" type="image/png" href="assets/favicon-derma.png">
+<link rel="apple-touch-icon" href="assets/favicon-derma.png">
+<meta name="theme-color" content="#F4F5F9">
+<style>
+  html, body { margin: 0; height: 100%; background: #F4F5F9; }
+  iframe { display: block; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<iframe id="app" title="Derma Agent 1:1 문의"></iframe>
+<script>
+  // Apps Script 웹 앱 주소 (배포할 때 나온 .../exec 주소)
+  const APP_URL = 'https://script.google.com/macros/s/AKfycbwbOMqi4Xmx_-GQnNJ0hvvD-jSNMVSEYQ1hQEk95G9VuNHOVi6gPXNPQ1usrUJiFns88w/exec';
+  document.getElementById('app').src = APP_URL + location.search;
+</script>
+</body>
+</html>
